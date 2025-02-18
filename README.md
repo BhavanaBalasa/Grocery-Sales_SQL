@@ -7,37 +7,47 @@
       The dataset consists of seven interconnected tables
 ### File Name	Description
     1. categories.csv: 	Defines the categories of the products.
-    2. cities.csv	   :  Contains city-level geographic data.
+    2. cities.csv    :  Contains city-level geographic data.
     3. countries.csv :  Stores country-related metadata.
     4. customers.csv : Contains information about the customers who make purchases.
     5. employees.csv : Stores details of employees handling sales transactions.
     6. products.csv  : Stores details about the products being sold.
-    7. sales.csv	   : Contains transactional data for each sale.
-## Table Descriptions
-   1. categories
-      Key	  ColumnName	  DataType	    Description
-      PK	  CategoryID	    INT	     Unique identifier for each product category.
-    	     CategoryName	 VARCHAR(45)	 Name of the product category.
+    7. sales.csv     : Contains transactional data for each sale.
+## Table Descriptions:
+ 1. categories:
+    
+| Key | ColumnName | DataType | Description |
+| ------- | ------- | ------- | ------- |   
+|  PK | CategoryID |  INT | Unique identifier for each product category. |    	  	        
+|     | CategoryName |  VARCHAR(45) |	 Name of the product category. |
+
 2. cities
-Key	Column Name	Data Type	Description
-PK	CityID	INT	Unique identifier for each city.
-	CityName	VARCHAR(45)	Name of the city.
-	Zipcode	DECIMAL(5,0)	Population of the city.
-FK	CountryID	INT	Reference to the corresponding country.
+   
+| Key | ColumnName | DataType | Description |
+| ------- | ------- | ------- | ------- |   
+|  PK | CityID |  INT | Unique identifier for each city. |    	  	        
+|     | CityName |  VARCHAR(45) | Name of the city. |
+|     | Zipcode |  DECIMAL(5,0) | Population of the city. |
+| FK | CountryID |  INT | Reference to the corresponding country. |
+
 3. countries
-Key	Column Name	Data Type	Description
-PK	CountryID	INT	Unique identifier for each country.
-	CountryName	VARCHAR(45)	Name of the country.
-	CountryCode	VARCHAR(2)	Two-letter country code.
+
+| Key | ColumnName | DataType | Description |
+| ------- | ------- | ------- | ------- |   
+|  PK | CountryID |  INT | Unique identifier for each country. |    	  	        
+|     | CountryName |  VARCHAR(45) | Name of the country. |
+|     | CountryCode |  VARCHAR(2) | Two-letter country code. |
+		
 4. customers
-Key	Column Name	Data Type	Description
-PK	CustomerID	INT	Unique identifier for each customer.
-	FirstName	VARCHAR(45)	First name of the customer.
-	MiddleName	VARCHAR(1)	Middle initial of the customer.
-	LastName	VARCHAR(45)	Last name of the customer.
-FK	cityID	INT	City of the customer.
-	Address	VARCHAR(90)	Residential address of the customer.
-5. employees
+
+|  PK | CustomerID |  INT | Unique identifier for each customer. |    	  	        
+|     | FirstName |  VARCHAR(1) | First name of the customer. |
+|     | MiddleName |  VARCHAR(1) |Middle initial of the customer. |
+|     | LastName |  VARCHAR(45) | Last name of the customer. |
+| FK | cityID |  INT | Reference to the corresponding country. |
+|     | Address |  VARCHAR(90) | Residential address of the customer. |  
+
+6. employees
 Key	Column Name	Data Type	Description
 PK	EmployeeID	INT	Unique identifier for each employee.
 	FirstName	VARCHAR(45)	First name of the employee.
@@ -47,7 +57,7 @@ PK	EmployeeID	INT	Unique identifier for each employee.
 	Gender	VARCHAR(10)	Gender of the employee.
 FK	CityID	INT	unique identifier for city
 	HireDate	DATE	Date when the employee was hired.
-6. products
+7. products
 Key	Column Name	Data Type	Description
 PK	ProductID	INT	Unique identifier for each product.
 	ProductName	VARCHAR(45)	Name of the product.
@@ -58,7 +68,7 @@ PK	ProductID	INT	Unique identifier for each product.
 	Resistant	VARCHAR(15)	Product resistance category.
 	IsAllergic	VARCHAR	indicates whether the item is an allergen
 	VitalityDays	DECIMAL(3,0)	Product vital type classification.
-7. sales
+8. sales
 Key	Column Name	Data Type	Description
 PK	SalesID	INT	Unique identifier for each sale.
 FK	SalesPersonID	INT	Employee responsible for the sale.
