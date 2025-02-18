@@ -40,6 +40,8 @@
 		
 4. customers
 
+| Key | ColumnName | DataType | Description |
+| ------- | ------- | ------- | ------- | 
 |  PK | CustomerID |  INT | Unique identifier for each customer. |    	  	        
 |     | FirstName |  VARCHAR(1) | First name of the customer. |
 |     | MiddleName |  VARCHAR(1) |Middle initial of the customer. |
