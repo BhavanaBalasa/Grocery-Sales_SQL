@@ -1,18 +1,18 @@
 # Grocery-Sales_SQL
 ## Introduction
-      This project explores a structured sales database consisting of seven interconnected tables, offering a robust foundation for data analysis.
-      The dataset provides insights into product categories, customer demographics, employee details, geographic distribution, and sales transactions.
-      It enables aspiring data scientists to refine their SQL skills by working with real-world business scenarios.
+      This project explores a structured sales database consisting of seven interconnected tables, offering a robust foundation 
+      for data analysis.The dataset provides insights into product categories, customer demographics, employee details,
+      geographic distribution, and sales transactions.It enables aspiring data scientists to refine their SQL skills by 
+      working with real-world business scenarios.
 ## Dataset Overview: 
-      The dataset consists of seven interconnected tables
-### File Name	Description
-    1. categories.csv: 	Defines the categories of the products.
-    2. cities.csv    :  Contains city-level geographic data.
-    3. countries.csv :  Stores country-related metadata.
-    4. customers.csv : Contains information about the customers who make purchases.
-    5. employees.csv : Stores details of employees handling sales transactions.
-    6. products.csv  : Stores details about the products being sold.
-    7. sales.csv     : Contains transactional data for each sale.
+      The dataset consists of seven interconnected tables.
+    1. categories.csv : Defines the categories of the products.
+    2. cities.csv     : Contains city-level geographic data.
+    3. countries.csv  : Stores country-related metadata.
+    4. customers.csv  : Contains information about the customers who make purchases.
+    5. employees.csv  : Stores details of employees handling sales transactions.
+    6. products.csv   : Stores details about the products being sold.
+    7. sales.csv      : Contains transactional data for each sale.
 ## Table Descriptions:
  1. categories:
     
@@ -49,39 +49,49 @@
 | FK | cityID |  INT | Reference to the corresponding country. |
 |     | Address |  VARCHAR(90) | Residential address of the customer. |  
 
-6. employees
-Key	Column Name	Data Type	Description
-PK	EmployeeID	INT	Unique identifier for each employee.
-	FirstName	VARCHAR(45)	First name of the employee.
-	MiddleInitial	VARCHAR(1)	Middle initial of the employee.
-	LastName	VARCHAR(45)	Last name of the employee.
-	BirthDate	DATE	Date of birth of the employee.
-	Gender	VARCHAR(10)	Gender of the employee.
-FK	CityID	INT	unique identifier for city
-	HireDate	DATE	Date when the employee was hired.
-7. products
-Key	Column Name	Data Type	Description
-PK	ProductID	INT	Unique identifier for each product.
-	ProductName	VARCHAR(45)	Name of the product.
-	Price	DECIMAL(4,0)	Price per unit of the product.
-	CategoryID	INT	unique category identifier
-	Class	VARCHAR(15)	Classification of the product.
-	ModifyDate	DATE	Last modified date.
-	Resistant	VARCHAR(15)	Product resistance category.
-	IsAllergic	VARCHAR	indicates whether the item is an allergen
-	VitalityDays	DECIMAL(3,0)	Product vital type classification.
-8. sales
-Key	Column Name	Data Type	Description
-PK	SalesID	INT	Unique identifier for each sale.
-FK	SalesPersonID	INT	Employee responsible for the sale.
-FK	CustomerID	INT	Customer making the purchase.
-FK	ProductID	INT	Product being sold.
-	Quantity	INT	Number of units sold.
-	Discount	DECIMAL(10,2)	Discount applied to the sale.
-	TotalPrice	DECIMAL(10,2)	Final sale price after discounts.
-	SalesDate	DATETIME	Date and time of the sale.
-	TransactionNumber	VARCHAR(25)	Unique identifier for the transaction.
-Use Cases
+5. employees
+
+| Key | ColumnName | DataType | Description |
+| ------- | ------- | ------- | ------- | 
+|  PK  |  EmployeeID  |  INT  |  Unique identifier for each employee.  |
+|      |  FirstName  |  VARCHAR(45)  |  First name of the employee.  |
+|      |  MiddleInitial  |  VARCHAR(1)  |  Middle initial of the employee.  |
+|      |  LastName  |  VARCHAR(45)  |  Last name of the employee.  |
+|      |  BirthDate  |	DATE  |	 Date of birth of the employee.  |
+|      |  Gender  |  VARCHAR(10)  |  Gender of the employee.  |
+|  FK  |  CityID  |  INT  |  unique identifier for city  |
+|      |  HireDate  |	DATE  |  Date when the employee was hired.  |
+
+6. products
+   
+| Key | ColumnName | DataType | Description |
+| ------- | ------- | ------- | ------- | 
+|  PK  |  ProductID  |	INT  |	Unique identifier for each product.  |
+|      |  ProductName  |  VARCHAR(45)  |  Name of the product.  |
+|      |  Price  |  DECIMAL(4,0)  |  Price per unit of the product.  |
+|      |  CategoryID  |  INT  |	 unique category identifier  |
+|      |  Class  |  VARCHAR(15)  |  Classification of the product.  |
+|      |  ModifyDate  |  DATE  |  Last modified date.  |
+|      |  Resistant  |  VARCHAR(15)  |	Product resistance category.  |
+|      |  IsAllergic  |	 VARCHAR  |  indicates whether the item is an allergen  |
+|      |  VitalityDays  |  DECIMAL(3,0)  |  Product vital type classification.  |
+
+7. sales
+   
+| Key | ColumnName | DataType | Description |
+| ------- | ------- | ------- | ------- | 
+|  PK  |  SalesID  |  INT  |  Unique identifier for each sale.  |
+|  FK  |  SalesPersonID	 |  INT	 |  Employee responsible for the sale.  |
+|  FK  |  CustomerID  |	INT  |  Customer making the purchase.  |
+|  FK  |  ProductID  |  INT  |	Product being sold.  |
+|      |  Quantity  |   INT  |	Number of units sold.  |
+|      |   Discount  |	DECIMAL(10,2)  |  Discount applied to the sale.  |
+|      |  TotalPrice  |  DECIMAL(10,2)	|  Final sale price after discounts.  |
+|      |  SalesDate  |	DATETIME  |  Date and time of the sale.  |
+|      |  TransactionNumber  |	VARCHAR(25)  |	Unique identifier for the transaction  |
+
+## Use Cases
+
 Despite being a four-month snapshot and existing independently of external data sources, this dataset offers a rich environment for aspiring data scientists to practice and enhance their SQL skills. Here are some approachable and practical use cases:
 1. Monthly Sales Performance
 •	Objective: Analyze sales performance within the four months to identify trends and patterns.
