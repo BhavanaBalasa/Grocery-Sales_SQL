@@ -134,6 +134,38 @@ Despite being a four-month snapshot and existing independently of external data 
 - Products: Categorized under specific Categories to organize the inventory.
 - Geography: Cities belong to Countries, offering higher-level geographic segmentation.
 
+## Insights:
+1. Sales Analysis:
+- The highest sales occurred in Month 3 (March?) with 32.21 M, closely followed by Month 1 (32.12 M).
+- There is a significant drop in Month 5, with sales falling to 9.14 M, which is almost 71% lower than the previous month (Month 4).
+- Months 1 to 4 show relatively stable and strong sales, ranging from 29.00 M to 32.21 M.
+- Confections and Meat lead in total sales across months. Target these for marketing or promotions.
+
+2. Products Analysis:
+- Products like passion fruit purée, pork, and wasabi are leading in unit-level sales — great for premium pricing, upsells, or featuring in highlights.
+- Highest Quantity Sold products are Pork - Hock And Feet Attached.
+- Beef - Inside Round and Puree - Passion Fruit have strong unit price and decent volume.
+- Confections and Meat are your power categories, making up 22.47% of all sales.
+- Snails, Produce, Beverages, and Dairy are close in sales (all around 11 M), showing balanced consumer interest.
+- Shell fish is at the bottom but still contributes meaningfully at 6.43% .
+  
+3. Customer Purchase Behaviour:
+- Kirk Mccarty and Janette Lucero are the most frequent purchasers — possibly VIP customers.
+- Customers are tied at 12 purchases — strong retention group.
+- The top 5 customers all spent 13K+, indicating a solid base of high-value customers.
+- Repeat customers make up ~71% of your customer base (61,352 out of 86,776).
+- One-time buyers are still a large group — potential for retargeting campaigns or welcome-back offers.
+
+4. Salesperson Analysis:
+- The difference between the top and bottom is relatively tight (~5.9M vs. ~5.6M), so underperformers are not far behind. 
+- Darnell and Daphne are nearly tied at the top — great performance.Seth and 
+- Sonya could benefit from coaching, improved lead assignment, or product mix optimization.
+
+5. Geographical Sales Insights:
+- Tucson leads by a small margin, but the rest of the cities are very close, indicating a consistent performance across regions .
+- Tucson tops the list with the highest sales volume at 30,478.
+
+
 ## Conclusion:
       This project provides a valuable learning experience in handling relational databases, executing complex SQL queries, 
       and deriving meaningful business insights. By leveraging the dataset, data professionals can practice optimizing queries, 
