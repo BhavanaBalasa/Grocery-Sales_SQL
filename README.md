@@ -125,7 +125,7 @@ Despite being a four-month snapshot and existing independently of external data 
 
 ## Database Schema:
 
-![]()
+![](https://github.com/BhavanaBalasa/Grocery-Sales_SQL/blob/main/ERDiagram.png)
  
 ## Data Relationships
 - Sales: Each sale is linked to a Product, Customer, and Employee through their respective IDs. Each sale is linked to a location via the customer.
