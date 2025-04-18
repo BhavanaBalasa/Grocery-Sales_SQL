@@ -94,43 +94,48 @@
 
 Despite being a four-month snapshot and existing independently of external data sources, this dataset offers a rich environment for aspiring data scientists to practice and enhance their SQL skills. Here are some approachable and practical use cases:
 1. Monthly Sales Performance
-•	Objective: Analyze sales performance within the four months to identify trends and patterns.
-•	Tasks:
-o	Calculate total sales for each month.
-o	Compare sales performance across different product categories each month.
+- Objective: Analyze sales performance within the four months to identify trends and patterns.
+- Tasks:
+  - Calculate total sales for each month.
+  - Compare sales performance across different product categories each month.
 2. Top Products Identification
-•	Objective: Determine which products are the best and worst performers within the dataset timeframe.
-•	Tasks:
-o	Rank products based on total sales revenue.
-o	Analyze sales quantity and revenue to identify high-demand products.
-o	Examine the impact of product classifications on sales performance.
+- Objective: Determine which products are the best and worst performers within the dataset timeframe.
+- Tasks:
+  - Rank products based on total sales revenue.
+  - Analyze sales quantity and revenue to identify high-demand products.
+  - Examine the impact of product classifications on sales performance.
 3. Customer Purchase Behavior
-•	Objective: Understand how customers interact with products during the four-month period.
-•	Tasks:
-o	Segment customers based on their purchase frequency and total spend.
-o	Identify repeat customers versus one-time buyers.
-o	Analyze average order value and basket size.
+- Objective: Understand how customers interact with products during the four-month period.
+- Tasks:
+  - Segment customers based on their purchase frequency and total spend.
+  - Identify repeat customers versus one-time buyers.
+  - Analyze average order value and basket size.
 4. Salesperson Effectiveness
-•	Objective: Evaluate the performance of sales personnel in driving sales.
-•	Tasks:
-o	Calculate total sales attributed to each salesperson.
-o	Identify top-performing and underperforming sales staff.
-o	Analyze sales trends based on individual salesperson contributions over time.
+- Objective: Evaluate the performance of sales personnel in driving sales.
+- Tasks:
+  - Calculate total sales attributed to each salesperson.
+  - Identify top-performing and underperforming sales staff.
+  - Analyze sales trends based on individual salesperson contributions over time.
 5. Geographical Sales Insights
-•	Objective: Explore how sales are distributed across different cities and countries within the dataset.
-•	Tasks:
-o	Map sales data to specific cities and countries to identify high-performing regions.
-o	Compare sales volumes between various geographical areas.
-o	Assess the effectiveness of regional sales strategies.
-Database Schema:
- 
-Data Relationships
-•	Sales: Each sale is linked to a Product, Customer, and Employee through their respective IDs. Each sale is linked to a location via the customer.
-•	Customers: Associated with a City and a Country to provide geographic context.
-•	Employees: Manage sales and are uniquely identified by EmployeeID.
-•	Products: Categorized under specific Categories to organize the inventory.
-•	Geography: Cities belong to Countries, offering higher-level geographic segmentation.
+- Objective: Explore how sales are distributed across different cities and countries within the dataset.
+- Tasks:
+  - Map sales data to specific cities and countries to identify high-performing regions.
+  - Compare sales volumes between various geographical areas.
+  - Assess the effectiveness of regional sales strategies.
 
-Conclusion:
-This project provides a valuable learning experience in handling relational databases, executing complex SQL queries, and deriving meaningful business insights. By leveraging the dataset, data professionals can practice optimizing queries, performing aggregations, and crafting visualizations that drive data-driven decision-making.
+## Database Schema:
+
+![]()
+ 
+## Data Relationships
+- Sales: Each sale is linked to a Product, Customer, and Employee through their respective IDs. Each sale is linked to a location via the customer.
+- Customers: Associated with a City and a Country to provide geographic context.
+- Employees: Manage sales and are uniquely identified by EmployeeID.
+- Products: Categorized under specific Categories to organize the inventory.
+- Geography: Cities belong to Countries, offering higher-level geographic segmentation.
+
+## Conclusion:
+      This project provides a valuable learning experience in handling relational databases, executing complex SQL queries, 
+      and deriving meaningful business insights. By leveraging the dataset, data professionals can practice optimizing queries, 
+      performing aggregations, and crafting visualizations that drive data-driven decision-making.
 
